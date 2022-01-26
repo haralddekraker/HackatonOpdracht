@@ -1,0 +1,87 @@
+.GridContainer {     
+    display: grid;  
+    grid-template: 
+    "l" 50px
+    "h" 50px
+    "m" auto
+    "c" auto
+    "i" auto
+    "v" 50px / 100%;
+    row-gap: 3px;
+}
+
+.GridContainer > * {
+        font-weight: bold;
+        padding: 0px 5px 5px 20px;
+}
+
+.Menu {
+    background-color: darkseagreen;
+    grid-area: m;
+}
+
+.Menu > div {
+        margin-left: -15px;    
+        padding: 5px 0px 5px 5px;     
+        font-size: larger;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+    }
+.Menu > div:hover {background:rgb(174, 233, 174)
+}
+.Menu div a {text-decoration: none; color:midnightblue
+} 
+
+.Content {
+    background-color: rgb(111, 192, 65);   
+    grid-area: c;                
+}
+
+p {padding-right: 10px}  
+
+.Voet {
+    background-color: rgb(3,101,192);
+    grid-area: v;
+    padding-top: 15px
+}
+
+@media screen and (min-width:361px) {
+        .GridContainer {
+            display: grid;           
+            grid-template:
+                "l l" 50px
+                "h h" 55px       
+                "m c" auto
+                "i i" auto
+                "v v" 50px / 275px auto;
+            row-gap: 2.5px;
+            column-gap: 3px;
+        }
+        p {padding-right: 5px;}  
+}        
+      
+@media screen and (min-width: 980px) {    
+        .GridContainer {
+            display: grid;           
+            grid-template: 
+            "h h l" 55px       
+            "m c i" auto
+            "v v i" 50px / 275px 4fr 1fr;
+            row-gap: 4px;
+            column-gap: 4px;
+        }
+        p {padding-right: 4px;}       
+}
+ 
+@media screen and (min-width: 1900px) {           
+        .GridContainer {
+            display: grid;           
+            grid-template: 
+            "h h l" 55px       
+            "m c i" auto
+            "v v i" 50px / 275px 4fr 1fr;
+        }
+}
+        
+    

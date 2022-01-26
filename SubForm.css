@@ -1,0 +1,69 @@
+body {    
+    display: grid ;
+    grid-template:
+    "l" 50px
+    "h" auto
+    "c" auto
+    "i" auto
+    "f" 50px / 100%;
+    row-gap: 2px;
+    column-gap: 2px}
+
+body > * {
+    font-weight: bold;
+    padding: 0px 5px 5px 10px;
+}
+
+.Content {
+    background-color: rgb(111, 192, 65);
+    grid-area: c;   
+}
+
+#Opdrachtvereisten > label {margin-right: 15px;}
+.Checkboxen > div {padding-right: 10px;}      
+
+form {display: flex; flex-wrap: wrap; width: 100%;}
+form > label {width: 100%; background-color: darkseagreen; color: midnightblue; border: 1px solid white;padding: 1px 5px;margin: 5px 0px;}
+form > input {width: 100%; font-family: Consolas;}
+form > .Checkboxen {width: 100%;}  
+form > .Checkboxen > label {border: none;}
+
+.VerzendKnop {
+    width: 100%;      
+    margin-top: 5px;
+    padding: 3px 0px;
+}
+
+footer {
+    background-color: rgb(3,101,192); 
+    grid-area:f;
+    padding-top: 15px}
+
+@media screen and (min-width:361px) {
+    #Opdrachtvereisten > label {margin-right: 0px;}
+    .Checkboxen > div {padding-right: 5px;}   
+}
+
+@media screen and (min-width: 980px){
+    form {gap: 5px 5px;}
+    form > label {width: 20%; background-color: transparent; color:inherit; border: 1px solid black ;padding: 1px 5px;margin: 0px 0px;}
+    form > input {width: 76%;}
+    form > .Checkboxen {width: 76%;} 
+    form label:hover {background-color: darkseagreen; color: midnightblue;} 
+    .VerzendKnop {width: 21%; margin-left: -1px;}            
+    body {                 
+    grid-template: 
+    "h l" 55px
+    "c i" auto
+    "f i" 50px / 4fr 1fr;}
+}
+                     
+@media screen and (min-width:1900px) {
+    form > label {width: 20%;}
+    form > input {width: 76%;}
+    form > .Checkboxen {width: 76%;} 
+    .VerzendKnop {width: 20.5%;}
+}
+        
+            
+    

@@ -1,0 +1,47 @@
+body {
+    display: grid ;
+    grid-template:
+    "l" 50px
+    "h" 50px
+    "c" auto
+    "i" auto
+    "f" 50px / 100%;
+    row-gap: 2px;
+    column-gap: 2px}
+
+body > * {
+    font-weight: bold;
+    padding: 0px 20px 5px 20px;}
+
+.Content {background-color: rgb(111, 192, 65);grid-area: c;}
+img {width: auto;}
+
+footer {
+    background-color: rgb(3,101,192); 
+    grid-area:f;
+    padding-top: 15px}
+@media screen and (min-width:361px) {
+
+    @media screen and (min-width: 980px){
+        body {
+            width: 980px;
+            grid-template: 
+            "h l" 50px
+            "c i" auto
+            "f i" 50px / 4fr 1fr;}
+            @media screen and (min-width:1900px) {
+                body {
+                    width: 1800px;}
+                label {
+                    width: 20%;}
+                input {
+                    width: 76%}
+                .Checkboxen {
+                    width: 76%;}
+                .VerzendKnop {
+                    width: 20.5%;
+            }
+        }
+            
+    }
+    }

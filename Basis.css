@@ -1,0 +1,55 @@
+body { 
+    width: 360px;
+    font-family: Consolas;
+    color: white;     
+    margin: 0px;
+    font-weight: bold;
+    background-color: azure;
+    background-image: url('Veluwe.jpg');           
+    box-sizing: border-box;
+}
+
+.GridContainer {border: 5px solid rgb(167,170,169); }
+
+header {    
+    background-color:rgb(82, 167, 249);
+    grid-area: h;
+    font-size:medium;
+}
+
+a {color: white;}
+
+h1, h2 {margin: 8px 0px 5px 3px;}
+.Logo { 
+    background-color: rgb(231, 245, 172);
+    grid-area: l;
+    display: block;
+    padding: 5px;
+}
+
+.Logo > img {
+    width:100%;
+    height: 100%;
+    object-fit: none;
+    object-position: 0% 90%
+}
+.Info {background-color: rgb(179,106,226);grid-area: i;}
+iframe {height: 420px; margin-top: 10px;}
+img{width: 100%;}
+
+@media screen and (min-width:361px) {
+        body{
+            width: 100%            
+        }}
+        
+@media screen and (min-width: 980px){          
+        .Logo > img {
+            width:100%;
+            height: 100%;
+            object-fit: scale-down;
+            object-position: 100% 15%
+            }} 
+@media screen and (min-width: 1900px) {}
+
+        
+    

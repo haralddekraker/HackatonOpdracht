@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+
+<head>
+    <title>Basisgegevens</title>
+    <link rel="stylesheet" href="Basis.css" type="text/css">
+    <link rel="stylesheet" href="SubForm.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1>Basisgegevens</h1>
+    </header>
+    <aside class="Logo"><img src="Logo.png"></aside>
+    <main class="Content">
+        <section>
+            <h2>Klantgegevens</h2>
+            <form action="" id="Klantgegevens" name="Klantgegevens">
+                <label for="BG">Nr. Bevoegd gezag:</label>
+                <input type="text" id="BG" name="BG" maxlength="5" minlength="5" pattern="[0-9]{5}" autofocus required>
+
+                <label for="Snaam">Statutaire naam:</label>
+                <input type="text" id="Snaam" name="Snaam" required>
+
+                <label for="Splaats">Statutaire vestigingsplaats:</label>
+                <input type="text" id="Splaats" name="Splaats" required>
+
+                <label for="NrHr">Nr. Handelsregister:</label>
+                <input type="text" id="NrHr" name="NrHr" maxlength="8" minlength="8" pattern="[0-9]{8}">
+
+                <label for="Sector">Onderwijssectoren:</label>
+                <div class="Checkboxen">
+                    <input type="checkbox" id="PO" name="Sector" value="PO" checked>
+                    <label for="PO">Primair Onderwijs</label> <br>
+                    <input type="checkbox" id="VO" name="Sector" value="VO">
+                    <label for="VO">Voortgezet Onderwijs</label> <br>
+                    <input type="checkbox" id="OV" name="Sector" value="OV">
+                    <label for="OV">Overig</label> <br>
+                </div>
+
+                <label for="SWV">Samenwerkingsverband:</label>
+                <div class="Checkboxen">
+                    <input type="radio" id="SWVja" value="Ja" name="SWV">
+                    <label for="SWVja">Ja</label>
+                    <input type="radio" id="SWVnee" value="Nee" name="SWV" checked>
+                    <label for="SWVnee">Nee</label>
+                </div>
+
+                <label for="WebsiteKlant">Website:</label>
+                <input type="url" id="WebsiteKlant" name="WebsiteKlant">
+
+                <input type="submit" class="VerzendKnop">
+            </form>
+        </section>
+
+    </main>
+    <aside class="Info">
+        <h2>Info</h2>
+        <p>Het nr. van het bevoegd gezag moet uit 5 cijfers bestaan.</p>
+        <p>Het nr. van het Handelsregister moet uit 8 cijfers bestaan.</p>
+        <a href="">Handleiding</a>
+    </aside>
+    <footer><a href="Index.html">Terug naar hoofdmenu</a></footer>
+</body>
+
+</html>

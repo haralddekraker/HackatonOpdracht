@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+
+<head>
+    <title>Bronbestanden</title>
+    <link rel="stylesheet" href="Basis.css" type="text/css">
+    <link rel="stylesheet" href="SubForm.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1>Basisgegevens</h1>
+    </header>
+    <aside class="Logo"><img src="Logo.png"></aside>
+    <main class="Content">
+        <section>
+            <h2>Bronbestanden opladen</h2>
+            <form action="" id="Bronbestanden" name="Bronbestanden">
+                <label for="ERP">Bronsysteem:</label>
+                <div class="Checkboxen">
+                    <input type="radio" id="Webfinancieel" value="Webfinancieel" name="ERP" checked>
+                    <label for="Webfinancieel">Webfinancieel</label>
+                    <input type="radio" id="Visma" value="Visma" name="ERP">
+                    <label for="Visma">Visma</label>
+                </div>
+                <label for="Balans">Mutatiebestand 'Balans'</label>
+                <input type="file" id="Balans" name="Balans">
+                <label for="Exploitatie">Mutatiebestand 'Exploitatie'</label>
+                <input type="file" id="Exploitatie" name="Exploitatie">
+                <label for="Verslagjaar">Mutatiebestand 'Verslagjaar'</label>
+                <input type="file" id="Verslagjaar" name="Verslagjaar">
+            </form>
+        </section>
+    </main>
+    <aside class="Info">
+        <h2>Info</h2>
+        <p>Hier worden de bronbestanden met de financiële mutaties opgeladen.
+        </p>
+        <a href="">Handleiding</a>
+    </aside>
+    <footer><a href="Index.html">Terug naar hoofdmenu</a></footer>
+</body>
+
+
+</html>
